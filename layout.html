@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Ritu Admin</title>
+      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=oyuTOtBtg5Nuh0y_9mA3QWxGHSbtEsQNw6Drmdj9xIt0KVGYIYphWJc2Clgf2_qZcHsusLrVJkGkj6ebJ2zUxbbi9PB06UarVa3mI_BLIksQ0BYSt4EOT3IxOykEx2M2EW7qpJGLt8l2qRejWzATrWvDWMncvQkhkZH5-joVG3giBspmsquoDbXwfeH_mhyUrlGMLStSB81jNq-JwCDkTlmGiebrWYLFUvddaPPvCGczA4EzD7biHBS9WgArOJlp" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hdHQtYi51ZGVteWNkbi5jb20vMjAxNy0wNy0yMV8xMC0wOC01Ni1hM2I0ZGEyM2FiZjI4NWQ5ZWVjZjM3YjBiMmM2Njg1ZC9vcmlnaW5hbC5odG1sP3NlY3VyZT02Y3Y0VFZKX2d1M0VyT28wdEtTQkxnJTNkJTNkJTJjMTYxODA3MjkyNCZmaWxlbmFtZT1sYXlvdXQuaHRtbA"/></head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">Ritu Admin</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('verification') }}">Verification</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+        {%block content%}
+        {%endblock%}
+    </div>
+  </body>
+</html>
